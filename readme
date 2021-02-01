@@ -1,0 +1,33 @@
+Rakendus koosneb frondist, backist ja andmebaasist.
+
+Frondi failid asuvad kataloogis Front
+Back failid asuvad kataloogis Back
+Andmebaas 'raamat' asub juurkataloogis. AB trigerid kataloogis Trigers.
+AB dumb-failid asuvad kataloogis dump.
+
+Rakenduse käivitamiseks tuleb avada OE'ga Raamatukogu_infosysteem.r.
+Võib ka käivitada RKI.bat.
+
+Avaneval ekraanipildil on võimalik valida 3 rolli vahel
+
+'Anonüümne kasutaja'
+'Raamatukogu teenindaga'
+'Administraator'
+
+(Sisselogimist ei ole realiseeritud, sest seda ei olnud tö kirjlduses.)
+
+'Anonüümne kasutaja' näeb raamatuite üldseisu ja saab sealt otsida.
+
+'Raamatukogu teenindaga' näeb raamatuvõlglaste aruannet, saab hallata kasutajaid ja laenutusi.
+Laenutajate haldamises saab laenutajaid otsida, lisada ja kustutada.
+Laenutuste haldamises saab laenutusi otsida, alustada ja lõpetada.
+
+'Administraator' näeb raamatuvõlglaste aruannet, saab hallata raamatuid, kasutajaid ja tähtaegasid.
+Raamatute haldamises saab raamatuid otsida, lisada ja kustutada.
+Kasutajate haldamises saab kasutajaid otsida, lisada ja kustutada.
+Tähtaegade haldamises saab laenutuste tähtaegasid muuta.
+
+
+ENTER-klahvi vajutus sisestusväljal käivitab otsingu. Seda teeb ka Otsi-nupp.
+ESC ja välja nupp väljavad vormilt.
+

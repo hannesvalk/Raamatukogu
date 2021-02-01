@@ -1,0 +1,25 @@
+
+                Mon Feb  1 14:37:57 2021
+[2021/02/01@14:37:57.622+0200] P-15564      T-14648 I DBUTIL   : (19399) Database with large file support enabled is being opened under sub-Enterprise license.  Large file support will be disabled. 
+[2021/02/01@14:37:57.622+0200] P-15564      T-14648 I DBUTIL   : (451)   prostrct create session begin for Hannes on CON:. 
+[2021/02/01@14:37:57.623+0200] P-15564      T-14648 I DBUTIL   : (19399) Database with large file support enabled is being opened under sub-Enterprise license.  Large file support will be disabled. 
+[2021/02/01@14:37:57.625+0200] P-15564      T-14648 I DBUTIL   : (12862) Structure file C:\OpenEdge\WRK\workspace\pakk\raamat.st used to create database with blocksize 4096. 
+[2021/02/01@14:37:57.668+0200] P-15564      T-14648 I DBUTIL   : (334)   prostrct create session end. 
+[2021/02/01@14:37:57.673+0200] P-15564      T-14648 I DBUTIL   : (451)   procopy session begin for Hannes on CON:. 
+[2021/02/01@14:37:57.937+0200] P-15564      T-14648 I DBUTIL   : (334)   procopy session end. 
+
+                Mon Feb  1 14:37:57 2021
+[2021/02/01@14:37:57.947+0200] P-15564      T-14648 I DBUTIL   : (451)   procopy get default SQL DBA session begin for Hannes on CON:. 
+[2021/02/01@14:37:57.947+0200] P-15564      T-14648 I DBUTIL   : (15321) Before Image Log Initialization at block 0  offset 0. 
+[2021/02/01@14:37:58.149+0200] P-15564      T-14648 I DBUTIL   : (14867) Procopy -newinstance Created a new database GUID. 
+[2021/02/01@14:37:58.261+0200] P-15564      T-14648 I DBUTIL   : (15109) At Database close the number of live transactions is 0. 
+[2021/02/01@14:37:58.261+0200] P-15564      T-14648 I DBUTIL   : (15743) Before Image Log Completion at Block 0 Offset 2645. 
+[2021/02/01@14:37:58.263+0200] P-15564      T-14648 I DBUTIL   : (334)   procopy get default SQL DBA session end. 
+
+                Mon Feb  1 14:38:03 2021
+[2021/02/01@14:38:03.268+0200] P-15580      T-14632 I ABL      : (451)   Single-user session begin for Hannes on CON:. 
+[2021/02/01@14:38:03.280+0200] P-15580      T-14632 I ABL      : (15321) Before Image Log Initialization at block 0  offset 2645. 
+[2021/02/01@14:38:03.284+0200] P-15580      T-14632 I ABL      : (7129)  Usr 0 set name to Hannes. 
+[2021/02/01@14:43:42.438+0200] P-15580      T-14632 I ABL      : (15109) At Database close the number of live transactions is 0. 
+[2021/02/01@14:43:42.438+0200] P-15580      T-14632 I ABL      : (15743) Before Image Log Completion at Block 18 Offset 952. 
+[2021/02/01@14:43:42.440+0200] P-15580      T-14632 I ABL      : (334)   Single-user session end. 

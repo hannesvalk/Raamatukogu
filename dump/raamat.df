@@ -1,0 +1,257 @@
+ADD TABLE "kasutajad"
+  AREA "Schema Area"
+  DESCRIPTION "Raamatukogu töötajad ja raamatute laenutajad"
+  DUMP-NAME "kasutajad"
+  TABLE-TRIGGER "CREATE" OVERRIDE PROCEDURE "Trigers\getNextKasutaja.p" CRC "57991" 
+
+ADD FIELD "id" OF "kasutajad" AS integer 
+  DESCRIPTION "kasutaja unikaalne ID"
+  FORMAT "->,>>>,>>9"
+  INITIAL "0"
+  POSITION 2
+  MAX-WIDTH 4
+  ORDER 10
+  MANDATORY
+
+ADD FIELD "Nimi" OF "kasutajad" AS character 
+  DESCRIPTION "Kasutaja nimi"
+  FORMAT "x(40)"
+  INITIAL ""
+  POSITION 3
+  MAX-WIDTH 80
+  ORDER 20
+
+ADD FIELD "staatus" OF "kasutajad" AS character 
+  DESCRIPTION "Kasutaja staatus (K-kasutaja/T-teenindaja/A-administraator)"
+  FORMAT "x(1)"
+  INITIAL ""
+  POSITION 4
+  MAX-WIDTH 2
+  ORDER 30
+
+ADD FIELD "username" OF "kasutajad" AS character 
+  DESCRIPTION "kasutajatunnus (lihtlugejal ei ole)"
+  FORMAT "x(8)"
+  INITIAL ""
+  POSITION 5
+  MAX-WIDTH 16
+  ORDER 40
+
+ADD FIELD "password" OF "kasutajad" AS character 
+  DESCRIPTION "Salasõna (lihtkasutajal ei ole)"
+  FORMAT "x(8)"
+  INITIAL ""
+  POSITION 6
+  MAX-WIDTH 16
+  ORDER 50
+
+ADD INDEX "IDindeks" ON "kasutajad" 
+  AREA "Schema Area"
+  UNIQUE
+  PRIMARY
+  INDEX-FIELD "id" ASCENDING 
+
+ADD INDEX "NimiIndeks" ON "kasutajad" 
+  AREA "Schema Area"
+  INDEX-FIELD "Nimi" ASCENDING 
+  INDEX-FIELD "id" ASCENDING 
+
+ADD INDEX "StaatusIndeks" ON "kasutajad" 
+  AREA "Schema Area"
+  INDEX-FIELD "staatus" ASCENDING 
+  INDEX-FIELD "Nimi" ASCENDING 
+  INDEX-FIELD "id" ASCENDING 
+
+ADD INDEX "UserNameIndeks" ON "kasutajad" 
+  AREA "Schema Area"
+  INDEX-FIELD "username" ASCENDING 
+  INDEX-FIELD "id" ASCENDING 
+
+ADD TABLE "laenutused"
+  AREA "Schema Area"
+  DESCRIPTION "raamatu eksemplarid ja nende staatused (laenutused)"
+  DUMP-NAME "laenutused"
+  TABLE-TRIGGER "CREATE" NO-OVERRIDE PROCEDURE "Trigers\getNextLaenutus.p" CRC "39222" 
+
+ADD FIELD "ID" OF "laenutused" AS integer 
+  DESCRIPTION "Laenutuse unikaalne ID"
+  FORMAT "->,>>>,>>9"
+  INITIAL "0"
+  POSITION 2
+  MAX-WIDTH 4
+  ORDER 10
+
+ADD FIELD "raamatu_id" OF "laenutused" AS integer 
+  DESCRIPTION "raamatu id"
+  FORMAT "->,>>>,>>9"
+  INITIAL "0"
+  POSITION 3
+  MAX-WIDTH 4
+  ORDER 20
+
+ADD FIELD "laenutaja_id" OF "laenutused" AS integer 
+  DESCRIPTION "Laenutaja ID"
+  FORMAT "->,>>>,>>9"
+  INITIAL "0"
+  POSITION 4
+  MAX-WIDTH 4
+  ORDER 30
+
+ADD FIELD "Laenutatud" OF "laenutused" AS date 
+  DESCRIPTION "Raamatu viimase väljalaenutamise kuupäev"
+  FORMAT "99/99/99"
+  INITIAL ?
+  POSITION 5
+  MAX-WIDTH 4
+  ORDER 40
+
+ADD FIELD "Tahtaeg" OF "laenutused" AS date 
+  DESCRIPTION "Raamatu tagastamise tähtaeg"
+  FORMAT "99/99/99"
+  INITIAL ?
+  POSITION 6
+  MAX-WIDTH 4
+  ORDER 50
+
+ADD INDEX "IDindeks" ON "laenutused" 
+  AREA "Schema Area"
+  UNIQUE
+  PRIMARY
+  INDEX-FIELD "ID" ASCENDING 
+
+ADD INDEX "KasutajaIndeks" ON "laenutused" 
+  AREA "Schema Area"
+  INDEX-FIELD "laenutaja_id" ASCENDING 
+  INDEX-FIELD "ID" ASCENDING 
+
+ADD INDEX "RaamatuIndeks" ON "laenutused" 
+  AREA "Schema Area"
+  INDEX-FIELD "raamatu_id" ASCENDING 
+  INDEX-FIELD "ID" ASCENDING 
+
+ADD TABLE "raamatud"
+  AREA "Schema Area"
+  DESCRIPTION "Raamatute nimekiri"
+  DUMP-NAME "raamatud"
+  TABLE-TRIGGER "CREATE" OVERRIDE PROCEDURE "Trigers\getNextRaamat.p" CRC "41915" 
+
+ADD FIELD "Pealkiri" OF "raamatud" AS character 
+  DESCRIPTION "Raamatu pealkiri"
+  FORMAT "x(40)"
+  INITIAL ""
+  POSITION 3
+  MAX-WIDTH 80
+  ORDER 20
+
+ADD FIELD "Autor" OF "raamatud" AS character 
+  DESCRIPTION "Raamatu autor"
+  FORMAT "x(40)"
+  INITIAL ""
+  POSITION 4
+  MAX-WIDTH 80
+  ORDER 30
+
+ADD FIELD "ISBN" OF "raamatud" AS character 
+  DESCRIPTION "Raamatu ISBN kood"
+  FORMAT "x(20)"
+  INITIAL ""
+  POSITION 5
+  MAX-WIDTH 40
+  ORDER 40
+
+ADD FIELD "kuupaev" OF "raamatud" AS date 
+  DESCRIPTION "Raamatu väljaandmise kuupäev (sellest sõltub laenutusperioodi pikkus)"
+  FORMAT "99/99/99"
+  INITIAL ?
+  POSITION 6
+  MAX-WIDTH 4
+  ORDER 50
+
+ADD FIELD "id" OF "raamatud" AS integer 
+  DESCRIPTION "Raamatu unikaalne ID"
+  FORMAT "->,>>>,>>9"
+  INITIAL "0"
+  POSITION 7
+  MAX-WIDTH 4
+  ORDER 10
+
+ADD FIELD "Asukoht" OF "raamatud" AS character 
+  DESCRIPTION "Raamatu asukoht raamatukogus"
+  FORMAT "X(20)"
+  INITIAL ""
+  POSITION 8
+  MAX-WIDTH 40
+  ORDER 60
+
+ADD INDEX "IDindex" ON "raamatud" 
+  AREA "Schema Area"
+  UNIQUE
+  PRIMARY
+  INDEX-FIELD "id" ASCENDING 
+
+ADD INDEX "Autor_index" ON "raamatud" 
+  AREA "Schema Area"
+  INDEX-FIELD "Autor" ASCENDING 
+  INDEX-FIELD "Pealkiri" ASCENDING 
+  INDEX-FIELD "id" ASCENDING 
+
+ADD INDEX "kuupaev_index" ON "raamatud" 
+  AREA "Schema Area"
+  INDEX-FIELD "kuupaev" ASCENDING 
+  INDEX-FIELD "id" ASCENDING 
+
+ADD INDEX "Pealkiri_index" ON "raamatud" 
+  AREA "Schema Area"
+  INDEX-FIELD "Pealkiri" ASCENDING 
+  INDEX-FIELD "Autor" ASCENDING 
+
+ADD TABLE "setup"
+  AREA "Schema Area"
+  DESCRIPTION "Süsteemi häälestus"
+  DUMP-NAME "setup"
+
+ADD FIELD "uus_raamat" OF "setup" AS integer 
+  DESCRIPTION "Näitab, kui kaua (mitu päeva) loetakse raamatut uueks raamatuks, millel on lühem tagastustähtaeg."
+  FORMAT "ZZZZZ9"
+  INITIAL "0"
+  POSITION 2
+  MAX-WIDTH 4
+  ORDER 10
+
+ADD FIELD "uusraamat_tahtaeg" OF "setup" AS integer 
+  DESCRIPTION "uue raamatu (väljaandmisest möödas väehm päevai kui seadistuses uus_raamat) laenutusperioodi pikkus."
+  FORMAT "ZZZZZ9"
+  INITIAL "0"
+  POSITION 3
+  MAX-WIDTH 4
+  ORDER 20
+
+ADD FIELD "vahe_raamat" OF "setup" AS integer 
+  DESCRIPTION "raamatu väljalaenutamata eksemplaride arv, millest alates rakendatakse lühendatud tähtaega (vaheraamat_tahtaeg)"
+  FORMAT "ZZZZZ9"
+  INITIAL "0"
+  POSITION 4
+  MAX-WIDTH 4
+  ORDER 30
+
+ADD FIELD "vaheraamat_tahtaeg" OF "setup" AS integer 
+  DESCRIPTION "Nende raamatute, mille väljalaenutamata eksemplaride arv on alla (seadistuses vahe_raamat määratud) piiri, laenutusperioodi pikkus päevades."
+  FORMAT "ZZZZZ9"
+  INITIAL "0"
+  POSITION 5
+  MAX-WIDTH 4
+  ORDER 40
+
+ADD FIELD "raamat_tahtaeg" OF "setup" AS integer 
+  DESCRIPTION "Raamatu laenutusperioodi pikkus päevades (vaikeväärtus)"
+  FORMAT "ZZZZZ9"
+  INITIAL "0"
+  POSITION 6
+  MAX-WIDTH 4
+  ORDER 50
+
+.
+PSC
+cpstream=ISO8859-1
+.
+0000006205
