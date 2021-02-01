@@ -338,11 +338,14 @@ DO:
       RUN exitObject.
     &ENDIF
   &ELSE
-      APPLY "CLOSE":U TO THIS-PROCEDURE.
-      IF bkasutajad:NUM-ITERATIONS>0 THEN
-        RETURN STRING(tkasutajad.id).
+      DEFINE VARIABLE vastus AS CHARACTER.
+      IF bKasutajad:NUM-ITERATIONS>0 THEN
+        vastus=STRING(tkasutajad.id).
       ELSE
-        RETURN "-1".
+        vastus="-1".
+      
+      APPLY "CLOSE":U TO THIS-PROCEDURE.
+      RETURN vastus.
   &ENDIF
 END.
 
