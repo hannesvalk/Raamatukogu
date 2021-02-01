@@ -23,3 +23,116 @@
 [2021/02/01@14:43:42.438+0200] P-15580      T-14632 I ABL      : (15109) At Database close the number of live transactions is 0. 
 [2021/02/01@14:43:42.438+0200] P-15580      T-14632 I ABL      : (15743) Before Image Log Completion at Block 18 Offset 952. 
 [2021/02/01@14:43:42.440+0200] P-15580      T-14632 I ABL      : (334)   Single-user session end. 
+
+                Mon Feb  1 20:02:41 2021
+[2021/02/01@20:02:41.655+0200] P-15052      T-6100  I BROKER  0: (333)   Multi-user session begin. 
+[2021/02/01@20:02:41.656+0200] P-15052      T-6100  I BROKER  0: (15321) Before Image Log Initialization at block 18  offset 952. 
+[2021/02/01@20:02:41.784+0200] P-15052      T-6100  I BROKER  0: (452)   Login by Hannes on batch. 
+[2021/02/01@20:02:41.805+0200] P-15052      T-6100  I BROKER  0: (4393)  This server is licensed for local logins only. 
+[2021/02/01@20:02:41.823+0200] P-15052      T-6100  I BROKER  0: (12037) Unable to bind socket to port 20931 errno 0. 
+[2021/02/01@20:02:41.823+0200] P-15052      T-6100  I BROKER  0: (15193) The normal shutdown of the database will continue for 10 Min 0 Sec if required. 
+[2021/02/01@20:02:41.863+0200] P-15052      T-6100  I BROKER  0: (2248)  Begin normal shutdown 
+[2021/02/01@20:02:42.870+0200] P-15052      T-6100  I BROKER  0: (2263)  Resending shutdown request to 0 user(s). 
+[2021/02/01@20:02:46.944+0200] P-15052      T-6100  I BROKER  0: (15109) At Database close the number of live transactions is 0. 
+[2021/02/01@20:02:46.944+0200] P-15052      T-6100  I BROKER  0: (15743) Before Image Log Completion at Block 18 Offset 952. 
+[2021/02/01@20:02:46.944+0200] P-15052      T-6100  I BROKER  0: (453)   Logout by Hannes on batch. 
+[2021/02/01@20:02:46.948+0200] P-15052      T-6100  I BROKER   : (16869) Removed shared memory with segment_id: 2234635321344 
+[2021/02/01@20:02:46.948+0200] P-15052      T-6100  I BROKER   : (334)   Multi-user session end. 
+
+                Mon Feb  1 20:02:48 2021
+[2021/02/01@20:02:48.257+0200] P-11212      T-18100 I BROKER  0: (333)   Multi-user session begin. 
+[2021/02/01@20:02:48.258+0200] P-11212      T-18100 I BROKER  0: (15321) Before Image Log Initialization at block 18  offset 952. 
+[2021/02/01@20:02:48.262+0200] P-11212      T-18100 I BROKER  0: (452)   Login by Hannes on batch. 
+[2021/02/01@20:02:48.263+0200] P-11212      T-18100 I BROKER  0: (4393)  This server is licensed for local logins only. 
+[2021/02/01@20:02:48.282+0200] P-11212      T-18100 I BROKER  0: (12037) Unable to bind socket to port 20931 errno 0. 
+[2021/02/01@20:02:48.282+0200] P-11212      T-18100 I BROKER  0: (15193) The normal shutdown of the database will continue for 10 Min 0 Sec if required. 
+[2021/02/01@20:02:48.282+0200] P-11212      T-18100 I BROKER  0: (2248)  Begin normal shutdown 
+[2021/02/01@20:02:49.283+0200] P-11212      T-18100 I BROKER  0: (2263)  Resending shutdown request to 0 user(s). 
+[2021/02/01@20:02:53.335+0200] P-11212      T-18100 I BROKER  0: (15109) At Database close the number of live transactions is 0. 
+[2021/02/01@20:02:53.335+0200] P-11212      T-18100 I BROKER  0: (15743) Before Image Log Completion at Block 18 Offset 952. 
+[2021/02/01@20:02:53.336+0200] P-11212      T-18100 I BROKER  0: (453)   Logout by Hannes on batch. 
+[2021/02/01@20:02:53.341+0200] P-11212      T-18100 I BROKER   : (16869) Removed shared memory with segment_id: 1367478894592 
+[2021/02/01@20:02:53.341+0200] P-11212      T-18100 I BROKER   : (334)   Multi-user session end. 
+
+                Mon Feb  1 20:03:38 2021
+[2021/02/01@20:03:38.016+0200] P-15844      T-6064  I BROKER  0: (333)   Multi-user session begin. 
+[2021/02/01@20:03:38.017+0200] P-15844      T-6064  I BROKER  0: (15321) Before Image Log Initialization at block 18  offset 952. 
+[2021/02/01@20:03:38.085+0200] P-15844      T-6064  I BROKER  0: (452)   Login by Hannes on batch. 
+[2021/02/01@20:03:38.086+0200] P-15844      T-6064  I BROKER  0: (4393)  This server is licensed for local logins only. 
+[2021/02/01@20:03:38.105+0200] P-15844      T-6064  I BROKER  0: (12037) Unable to bind socket to port 20931 errno 0. 
+[2021/02/01@20:03:38.105+0200] P-15844      T-6064  I BROKER  0: (15193) The normal shutdown of the database will continue for 10 Min 0 Sec if required. 
+[2021/02/01@20:03:38.105+0200] P-15844      T-6064  I BROKER  0: (2248)  Begin normal shutdown 
+[2021/02/01@20:03:39.118+0200] P-15844      T-6064  I BROKER  0: (2263)  Resending shutdown request to 0 user(s). 
+[2021/02/01@20:03:43.167+0200] P-15844      T-6064  I BROKER  0: (15109) At Database close the number of live transactions is 0. 
+[2021/02/01@20:03:43.167+0200] P-15844      T-6064  I BROKER  0: (15743) Before Image Log Completion at Block 18 Offset 952. 
+[2021/02/01@20:03:43.167+0200] P-15844      T-6064  I BROKER  0: (453)   Logout by Hannes on batch. 
+[2021/02/01@20:03:43.171+0200] P-15844      T-6064  I BROKER   : (16869) Removed shared memory with segment_id: 2321633443840 
+[2021/02/01@20:03:43.171+0200] P-15844      T-6064  I BROKER   : (334)   Multi-user session end. 
+
+                Mon Feb  1 20:03:50 2021
+[2021/02/01@20:03:50.406+0200] P-18096      T-13824 I BROKER  0: (333)   Multi-user session begin. 
+[2021/02/01@20:03:50.407+0200] P-18096      T-13824 I BROKER  0: (15321) Before Image Log Initialization at block 18  offset 952. 
+[2021/02/01@20:03:50.410+0200] P-18096      T-13824 I BROKER  0: (452)   Login by Hannes on batch. 
+[2021/02/01@20:03:50.411+0200] P-18096      T-13824 I BROKER  0: (4393)  This server is licensed for local logins only. 
+[2021/02/01@20:03:50.429+0200] P-18096      T-13824 I BROKER  0: (12037) Unable to bind socket to port 20931 errno 0. 
+[2021/02/01@20:03:50.429+0200] P-18096      T-13824 I BROKER  0: (15193) The normal shutdown of the database will continue for 10 Min 0 Sec if required. 
+[2021/02/01@20:03:50.429+0200] P-18096      T-13824 I BROKER  0: (2248)  Begin normal shutdown 
+[2021/02/01@20:03:51.443+0200] P-18096      T-13824 I BROKER  0: (2263)  Resending shutdown request to 0 user(s). 
+[2021/02/01@20:03:55.499+0200] P-18096      T-13824 I BROKER  0: (15109) At Database close the number of live transactions is 0. 
+[2021/02/01@20:03:55.499+0200] P-18096      T-13824 I BROKER  0: (15743) Before Image Log Completion at Block 18 Offset 952. 
+[2021/02/01@20:03:55.500+0200] P-18096      T-13824 I BROKER  0: (453)   Logout by Hannes on batch. 
+[2021/02/01@20:03:55.503+0200] P-18096      T-13824 I BROKER   : (16869) Removed shared memory with segment_id: 2470081724416 
+[2021/02/01@20:03:55.503+0200] P-18096      T-13824 I BROKER   : (334)   Multi-user session end. 
+
+                Mon Feb  1 20:04:51 2021
+[2021/02/01@20:04:51.903+0200] P-4124       T-18396 I BROKER  0: (333)   Multi-user session begin. 
+[2021/02/01@20:04:51.904+0200] P-4124       T-18396 I BROKER  0: (15321) Before Image Log Initialization at block 18  offset 952. 
+[2021/02/01@20:04:52.009+0200] P-4124       T-18396 I BROKER  0: (452)   Login by Hannes on batch. 
+[2021/02/01@20:04:52.010+0200] P-4124       T-18396 I BROKER  0: (4393)  This server is licensed for local logins only. 
+[2021/02/01@20:04:52.028+0200] P-4124       T-18396 I BROKER  0: (12037) Unable to bind socket to port 20931 errno 0. 
+[2021/02/01@20:04:52.028+0200] P-4124       T-18396 I BROKER  0: (15193) The normal shutdown of the database will continue for 10 Min 0 Sec if required. 
+[2021/02/01@20:04:52.028+0200] P-4124       T-18396 I BROKER  0: (2248)  Begin normal shutdown 
+[2021/02/01@20:04:53.035+0200] P-4124       T-18396 I BROKER  0: (2263)  Resending shutdown request to 0 user(s). 
+[2021/02/01@20:04:57.096+0200] P-4124       T-18396 I BROKER  0: (15109) At Database close the number of live transactions is 0. 
+[2021/02/01@20:04:57.097+0200] P-4124       T-18396 I BROKER  0: (15743) Before Image Log Completion at Block 18 Offset 952. 
+[2021/02/01@20:04:57.097+0200] P-4124       T-18396 I BROKER  0: (453)   Logout by Hannes on batch. 
+[2021/02/01@20:04:57.100+0200] P-4124       T-18396 I BROKER   : (16869) Removed shared memory with segment_id: 1736943534080 
+[2021/02/01@20:04:57.100+0200] P-4124       T-18396 I BROKER   : (334)   Multi-user session end. 
+
+                Mon Feb  1 20:06:30 2021
+[2021/02/01@20:06:30.763+0200] P-13756      T-248   I ABL      : (451)   Single-user session begin for Hannes on CON:. 
+[2021/02/01@20:06:30.766+0200] P-13756      T-248   I ABL      : (15321) Before Image Log Initialization at block 18  offset 952. 
+[2021/02/01@20:06:30.838+0200] P-13756      T-248   I ABL      : (7129)  Usr 0 set name to Hannes. 
+[2021/02/01@20:16:16.940+0200] P-13756      T-248   I ABL      : (15109) At Database close the number of live transactions is 0. 
+[2021/02/01@20:16:16.940+0200] P-13756      T-248   I ABL      : (15743) Before Image Log Completion at Block 21 Offset 5328. 
+[2021/02/01@20:16:16.943+0200] P-13756      T-248   I ABL      : (334)   Single-user session end. 
+
+                Mon Feb  1 20:17:13 2021
+[2021/02/01@20:17:13.512+0200] P-18396      T-2536  I BROKER  0: (333)   Multi-user session begin. 
+[2021/02/01@20:17:13.513+0200] P-18396      T-2536  I BROKER  0: (15321) Before Image Log Initialization at block 21  offset 5328. 
+[2021/02/01@20:17:13.601+0200] P-18396      T-2536  I BROKER  0: (452)   Login by Hannes on batch. 
+[2021/02/01@20:17:13.601+0200] P-18396      T-2536  I BROKER  0: (4393)  This server is licensed for local logins only. 
+[2021/02/01@20:17:13.619+0200] P-18396      T-2536  I BROKER  0: (12037) Unable to bind socket to port 20931 errno 0. 
+[2021/02/01@20:17:13.619+0200] P-18396      T-2536  I BROKER  0: (15193) The normal shutdown of the database will continue for 10 Min 0 Sec if required. 
+[2021/02/01@20:17:13.619+0200] P-18396      T-2536  I BROKER  0: (2248)  Begin normal shutdown 
+[2021/02/01@20:17:14.631+0200] P-18396      T-2536  I BROKER  0: (2263)  Resending shutdown request to 0 user(s). 
+[2021/02/01@20:17:18.915+0200] P-18396      T-2536  I BROKER  0: (15109) At Database close the number of live transactions is 0. 
+[2021/02/01@20:17:18.916+0200] P-18396      T-2536  I BROKER  0: (15743) Before Image Log Completion at Block 21 Offset 5328. 
+[2021/02/01@20:17:18.916+0200] P-18396      T-2536  I BROKER  0: (453)   Logout by Hannes on batch. 
+[2021/02/01@20:17:18.921+0200] P-18396      T-2536  I BROKER   : (16869) Removed shared memory with segment_id: 2011522859008 
+[2021/02/01@20:17:18.921+0200] P-18396      T-2536  I BROKER   : (334)   Multi-user session end. 
+
+                Mon Feb  1 20:18:17 2021
+[2021/02/01@20:18:17.475+0200] P-10696      T-14420 I BROKER  0: (333)   Multi-user session begin. 
+[2021/02/01@20:18:17.475+0200] P-10696      T-14420 I BROKER  0: (15321) Before Image Log Initialization at block 21  offset 5328. 
+[2021/02/01@20:18:17.478+0200] P-10696      T-14420 I BROKER  0: (452)   Login by Hannes on batch. 
+[2021/02/01@20:18:17.479+0200] P-10696      T-14420 I BROKER  0: (4393)  This server is licensed for local logins only. 
+[2021/02/01@20:18:17.496+0200] P-10696      T-14420 I BROKER  0: (12037) Unable to bind socket to port 20931 errno 0. 
+[2021/02/01@20:18:17.496+0200] P-10696      T-14420 I BROKER  0: (15193) The normal shutdown of the database will continue for 10 Min 0 Sec if required. 
+[2021/02/01@20:18:17.496+0200] P-10696      T-14420 I BROKER  0: (2248)  Begin normal shutdown 
+[2021/02/01@20:18:18.507+0200] P-10696      T-14420 I BROKER  0: (2263)  Resending shutdown request to 0 user(s). 
+[2021/02/01@20:18:22.587+0200] P-10696      T-14420 I BROKER  0: (15109) At Database close the number of live transactions is 0. 
+[2021/02/01@20:18:22.587+0200] P-10696      T-14420 I BROKER  0: (15743) Before Image Log Completion at Block 21 Offset 5328. 
+[2021/02/01@20:18:22.588+0200] P-10696      T-14420 I BROKER  0: (453)   Logout by Hannes on batch. 
+[2021/02/01@20:18:22.591+0200] P-10696      T-14420 I BROKER   : (16869) Removed shared memory with segment_id: 2266853474304 
+[2021/02/01@20:18:22.591+0200] P-10696      T-14420 I BROKER   : (334)   Multi-user session end. 
